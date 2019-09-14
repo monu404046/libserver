@@ -2,7 +2,7 @@ var express = require('express')
 const router = express.Router();
 const path = require('path');
 var mongoose = require('mongoose')
-var url = "mongodb+srv://ashwin:12345@cluster0-mbr14.mongodb.net/libdb?retryWrites=true&w=majority"
+var url = "mongodb+srv://ashwin:12345@cluster0-mbr14.mongodb.net/libdata?retryWrites=true&w=majority"
 var authors = require("../model/Author"); 
 
 // Add headers

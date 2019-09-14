@@ -1,7 +1,7 @@
 var express = require('express')
 const router = express.Router();
 var mongoose = require('mongoose')
-var url = "mongodb+srv://ashwin:12345@cluster0-mbr14.mongodb.net/libdb?retryWrites=true&w=majority"
+var url = "mongodb+srv://ashwin:12345@cluster0-mbr14.mongodb.net/libdata?retryWrites=true&w=majority"
 var users = require("../model/User"); 
 var bodyparser = require('body-parser')
 mongoose.connect(url, {useNewUrlParser:true},function(err){
@@ -22,9 +22,6 @@ router.post("/signup",function(req,res){
             if(err) 
             throw err;
             else if(result.length == 0)
-            
-
-            
             {
               
                 var u1 = new users();

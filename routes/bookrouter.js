@@ -13,7 +13,7 @@ var storage =   multer.diskStorage({
   });  
   var upload = multer({ storage : storage}).single('image');
 var mongoose = require('mongoose')
-var url = "mongodb+srv://ashwin:12345@cluster0-mbr14.mongodb.net/libdb?retryWrites=true&w=majority"
+var url = "mongodb+srv://ashwin:12345@cluster0-mbr14.mongodb.net/libdata?retryWrites=true&w=majority"
 var books = require("../model/Book"); 
 router.use(bodyparser.urlencoded({extended:true}))
 router.use(bodyparser.json());
